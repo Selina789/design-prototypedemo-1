@@ -1,0 +1,585 @@
+/* Nav */
+body,
+html,
+header{
+    margin: 0;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+nav{
+    box-sizing: inherit;
+    width: 100%;
+    height: 100%;
+    padding: 25px 50px;
+    background-color: rgb(250, 236, 236);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 15px solid rgb(255, 163, 163);
+    border-bottom: 15px solid rgb(255, 163, 163);
+}
+
+.logo{
+    cursor: grab;
+    width: 230px;
+    height: 150px;
+    -webkit-filter: drop-shadow(4px 4px 1px rgb(255, 206, 206));
+}
+
+.middle-section{
+    width: 95%;
+    margin: 0 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 40px;
+    background-color: rgb(253, 229, 229);
+    padding: 25px 20px;
+    border-radius: 10px;
+    border: 1.4px solid rgb(255, 133, 133);
+}
+
+.sign-page{
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.a,
+.button{
+    cursor: pointer;
+    color: rgb(136, 6, 6);
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 1s ease-in-out;
+}
+
+.a{
+    text-align: center;
+    text-decoration: underline 0.15em rgba(82, 0, 0, 0);
+}
+
+.a:hover{
+    text-decoration-color: rgba(82,0,0,1);
+    filter: drop-shadow(0px 0px 1px rgb(255, 171, 171));
+}
+
+.button{
+    color: white;
+    font-size: 1.1rem;
+    padding: 17px 35px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 15px;
+    background: rgb(255,109,109);
+    background: linear-gradient(90deg, rgba(255,109,109,1) 0%, rgba(255,128,128,1) 34%, rgba(255,220,220,1) 100%);
+}
+
+.button:hover{
+    color:rgb(255, 255, 255); 
+    background: rgb(255,220,220);
+    background: linear-gradient(90deg, rgba(255,220,220,1) 0%, rgba(255,128,128,1) 66%, rgba(255,109,109,1) 100%);
+}
+
+.button:active{
+    transition: 0.5s ease-in-out;
+    border: 2px solid red;
+    color:rgb(75, 0, 0);
+    background: white;
+}
+
+.login,
+.register{
+    text-decoration: none;
+}
+
+/* Hamburger */
+.hamburger,
+.close{
+    width: 50px;
+}
+
+.hamburger,
+.close,
+.mobile-nav{
+    display: none;
+}
+
+.close{
+    margin-left: 20px;
+    filter: invert(14%) sepia(83%) saturate(7421%) hue-rotate(359deg) brightness(107%) contrast(110%);
+}
+
+/* Main Section 1 */
+main{
+    box-sizing: inherit;
+}
+
+.section-1{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 140px 60px 0px 60px;
+    background: url('/images/red-aesthetics.gif');
+    background-size: contain;
+    border-top: 10px solid rgb(255, 0, 0);
+    border-bottom: 14px solid rgb(75, 0, 0);
+}
+
+.section-1-div{
+    display: flex;
+    flex-direction: row;
+}
+
+.glitter{
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    left: -90px;
+    top: 244px;
+    filter: contrast(200%);
+}
+
+.glitter:hover{
+    filter: brightness(200%);
+}
+
+.image-1{
+    width: 650px;
+    padding-right: 40px;
+    filter: brightness(130%);
+}
+
+.right-section-1{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.slogan{
+    color: red;
+    font-size: 2.7rem;
+    font-family: 'Salsa', cursive;
+    -webkit-text-stroke: 2px;
+    filter: contrast(100%);
+    text-shadow: 5px 5px 1px black;
+}
+
+.slogan-text{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 1px white;
+    background: rgb(255,190,190);
+    background: radial-gradient(circle, rgba(255,190,190,1) 0%, rgba(255,105,105,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.rednox{
+    font-size: 2.4rem;
+}
+
+.get-btn{
+    color: white;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 30px;
+    padding: 17px 40px;
+    border: 2px solid white;
+    border-radius: 20px;
+    align-self: center;
+    background: rgb(85,0,0);
+    background: linear-gradient(90deg, rgba(85,0,0,1) 0%, rgba(120,0,0,1) 16%, rgba(168,0,0,1) 35%, rgba(255,43,43,1) 53%, rgba(255,64,64,1) 69%, rgba(251,99,99,1) 85%, rgba(255,125,125,1) 100%);
+    background-size: 200% 100%;
+    transition: background-position 0.3s ease-in-out;
+}
+
+.get-btn:hover{
+    background-position: 100% 50% !important; 
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.get-btn:hover + .sparkle{
+    transition: 0.4s ease-in-out;
+    filter: brightness(170%);
+}
+
+.get-btn:active{
+    background: darkred;
+    transition: 0.5s ease-in-out;
+}
+
+.btn-stuck{
+    position: relative;
+    margin: auto;
+}
+
+.sparkle{
+    cursor: pointer;
+    width: 100px;
+    position: absolute;
+    left: -100px;
+    bottom: 20px;
+    transition: .1s ease-in-out;
+    filter: brightness(110%);
+}
+
+.sparkle:active{
+    filter: brightness(70%);
+}
+
+@media screen and (max-width: 1050px){
+    .mobile-nav{
+        display: none;
+    }
+    .middle-section{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+        column-gap: 50px;
+    }
+
+    .sign-page{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 20px;
+    }
+}
+
+
+
+@media screen and (min-width: 1px) and (max-width: 599px){
+    nav{
+        padding: 35px 50px;
+        width: 100%;
+        justify-content: space-between;
+        @media screen and (max-width: 373px){
+            padding: 35px 30px;
+        }
+    }
+
+    .hamburger{
+        display: block;
+        margin-left: 20px;
+        filter: invert(14%) sepia(83%) saturate(7421%) hue-rotate(359deg) brightness(107%) contrast(110%);
+    }
+
+    .mobile-nav{
+        line-height: 4rem;
+        padding: 10px 0;
+    }
+
+    .mobile-header,
+    .mobile-sign-page{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .a{
+        @media screen and (min-width: 500px) and (max-width: 599px) {
+            font-size: 1.3rem;
+        }
+    }
+
+    .button{
+        width: 100px;
+        padding: 0 25px;
+        margin: 10px 0;
+        align-self: center;
+        border-radius: 40px;
+        @media screen and (min-width: 500px) and (max-width: 599px) {
+            font-size: 1.2rem;
+            padding: 0 35px;
+        }
+    }
+
+    .middle-section,
+    .sign-page,
+    .image-1,
+    .glitter{
+        display: none;
+    }
+
+    .section-1{
+        box-sizing: content-box;
+        height: 399px;
+        background-size: cover;
+        padding: 50px 0;
+    }
+
+    .section-1-div{
+        line-height: 4rem;
+        @media screen and (min-width: 500px) and (max-width: 599px) {
+            line-height: 3.3rem;
+        }
+    }
+
+    .right-section-1{
+        width: 300px;
+        margin: auto;
+        @media screen and (min-width: 500px) and (max-width: 599px) {
+            width: 400px;
+        }
+    }
+
+    .slogan{
+        font-size: 2.2rem;
+        background: #c31432;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        @media screen and (min-width: 500px) and (max-width: 599px) {
+            font-size: 3rem;
+        }
+    }
+    
+    .slogan-text{
+        font-size: 1rem;
+        @media screen and (min-width: 500px) and (max-width: 599px) {
+            font-size: 1.5rem;
+        }
+    }
+
+    .rednox{
+        font-size: 2rem;
+        @media screen and (min-width: 500px) and (max-width: 599px) {
+            font-size: 2.4rem;
+        }
+    }
+
+    .sparkle{
+        width: 70px;
+        left: -70px;
+        bottom: 25px;
+        transition: .1s ease-in-out;
+        filter: brightness(110%);
+    }
+
+    .get-btn{
+        font-size: 1rem;
+        margin-top: 20px;
+        padding: 17px 20px;
+        @media screen and (min-width: 500px) and (max-width: 599px) {
+            font-size: 1.4rem;
+            padding: 17px 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 1px) and (max-width: 373px){
+    nav{
+        @media screen and (max-width: 249px) {
+            flex-direction: column;
+            row-gap: 30px;
+        }
+    }
+
+    .logo{
+        width: 150px;
+        height: 100px;
+    }
+
+    .hamburger{
+        width: 35px;
+    }
+
+    .button{
+        font-size: 0.9rem;
+    }
+
+    .right-section-1{
+        width: 250px;
+    }
+
+    .slogan{
+        font-size: 2rem;
+    }
+    
+    .slogan-text{
+        font-size: 0.9rem;
+    }
+
+    .rednox{
+        font-size: 1.8rem;
+    }
+
+    .sparkle{
+        width: 50px;
+        left: -50px;
+    }
+
+    .get-btn{
+        font-size: 0.9rem;
+        padding: 15px 15px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 959px) {
+    nav{
+        padding: 25px 30px;
+        @media screen and (min-width: 600px) and (max-width: 699px) {
+            padding: 25px;
+        }
+    }
+    .logo{
+        width: 180px;
+        height: 120px;
+        @media screen and (min-width: 600px) and (max-width: 744px) {
+            width: 150px;
+            height: 100px;
+        }
+    }
+    .middle-section{
+        row-gap: 30px;
+        padding: 25px;
+        @media screen and (min-width: 600px) and (max-width: 699px) {
+            margin: 3%;
+            padding: 17px 15px;
+            column-gap: 30px;
+        }
+    }
+    .sign-page{
+        row-gap: 15px;
+    }
+    .section-1{
+        position: relative;
+        height: 600px;
+        background-size: cover;
+        padding: 70px 0px 0px 00px;
+    }
+
+    .section-1-div{
+        line-height: 4rem;
+        @media screen and (min-width: 900px) {
+            line-height: 5rem;
+        }
+    }
+
+    .glitter{
+        width: 700px;
+        left: -200px;
+        top: 0;
+        @media screen and (min-width: 600px) and (max-width: 699px) {
+            left: -250px;
+        }
+    }
+    
+    .image-1{
+        width: 550px;
+        height: 400px;
+        position: absolute;
+        left: -120px;
+        bottom: -1px;
+        @media screen and (min-width: 600px) and (max-width: 699px) {
+            width: 470px;
+            height: 320px;
+            left: -160px;
+        }
+        @media screen and (min-width: 700px) and (max-width: 744px) {
+            width: 500px;
+            height: 350px;
+        }
+    }
+
+    .right-section-1{
+        width: 400px;
+        margin-left: auto;
+        @media screen and (min-width: 900px) {
+            width: 520px;
+        }
+    }
+
+    .slogan,
+    .slogan-text{
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .slogan{
+        background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    }
+
+    .slogan-text{
+        background-image: linear-gradient( 135deg, #FAD7A1 10%, #E96D71 100%);   
+        text-shadow: 1px 1px 5px white;
+    }
+
+    .button{
+        @media screen and (min-width: 600px) and (max-width: 699px) {
+            padding: 17px 25px;
+        }
+    }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1225px){
+    nav{
+        padding: 25px 30px;
+    }
+
+    .logo{
+        width: 160px;
+        height: 120px;
+    }
+
+    .middle-section{
+        padding: 25px 15px;
+        grid-template-columns: repeat(4,1fr);
+        column-gap: 40px;
+        margin: 3%;
+    }
+
+    .sign-page{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: none;
+    }
+
+    .button{
+        margin: 0 5px 0 0;
+        padding: 17px 30px;
+    }
+
+    .register{
+        padding: 17px 20px;
+    }
+
+    .section-1{
+        padding: 140px 30px 0px 0px;
+    }
+
+    .glitter{
+        width: 600px;
+        top: 225px;
+        left: -120px;
+    }
+
+    .image-1{
+        width: 570px;
+        height: 400px;
+        padding: 0;
+    }
+
+    .right-section-1{
+        width: 100%;
+        line-height: 4rem;
+    }
+
+    .slogan,
+    .slogan-text{
+        margin: 3px;
+    }
+}
