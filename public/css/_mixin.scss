@@ -1,0 +1,12 @@
+@mixin hamburger-menu{
+    margin: auto;
+    position: absolute;
+    border-radius: 5px;
+    width: 50px;
+    height: 8px;
+    background-color: rgb(228, 62, 62);
+}
+
+@mixin transition{
+    transition: all 0.5s ease-in-out;
+}

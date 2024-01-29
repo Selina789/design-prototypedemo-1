@@ -1,21 +1,18 @@
-let hamburger = document.getElementById('hamburger');
-let close = document.getElementById('close');
+let div = document.querySelector('.div-bar');
+let bar = document.querySelector('.div-bar__bar');
 let nav = document.getElementById('mobile-nav');
 
-hamburger.addEventListener('click', function(){
-    hamburger.style.display = 'none';
+let falseStatement = false;
 
-    if (nav.style.display == 'none' || nav.style.display == '') {
+div.addEventListener("click", function(){
+    if(!falseStatement){
+        bar.classList.add('open');
+        falseStatement = true;
         nav.style.display = 'block';
-    } else {
+    }
+    else{
+        bar.classList.remove('open');
+        falseStatement = false;
         nav.style.display = 'none';
     }
-
-    close.style.display = 'block';
-});
-
-close.addEventListener('click', function(){
-    close.style.display = 'none';
-    hamburger.style.display = 'block';
-    nav.style.display = 'none';
 })

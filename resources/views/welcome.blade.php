@@ -36,9 +36,8 @@
                 </div>
             @endif
 
-            <div>
-                <img class="hamburger" id="hamburger" src="{{ asset('images/hamburger.png') }}">
-                <img class="close" id="close" src="{{ asset('images/close.png') }}">
+            <div class="div-bar">
+                <span class="div-bar__bar"></span>
             </div>
         </nav>
     </header>
